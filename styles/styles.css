@@ -1,3 +1,82 @@
 html {
 	font-size: 62.5%;
 }
+
+body {
+	background: rgb(117, 255, 70);
+	background: linear-gradient(
+		352deg,
+		rgba(117, 255, 70, 1) 0%,
+		rgba(255, 244, 0, 0.8911939775910365) 100%
+	);
+	min-height: 100vh;
+	font-family: "Gochi Hand", cursive, Arial, Helvetica, sans-serif;
+}
+
+.heading {
+	text-align: center;
+	margin: 6rem 0 1.5rem 0;
+	font-size: 4.5rem;
+	color: rgb(255, 55, 55);
+}
+
+.info-text {
+	font-size: 2.5rem;
+	text-align: center;
+	color: rgb(255, 0, 0);
+}
+
+.app {
+	display: grid;
+	gap: 2rem;
+	grid-template-columns: repeat(auto-fill, 30rem);
+	justify-content: center;
+	padding: 2rem 0;
+}
+
+.note {
+	padding: 1.5rem;
+	border-radius: 1.5rem;
+	font-size: 2rem;
+	resize: none;
+	box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+	border: none;
+	height: 20rem;
+	color: darkblue;
+	outline: none;
+	background-color: rgba(255, 255, 255, 0.2);
+	box-sizing: border-box;
+}
+
+.note::placeholder {
+	color: deeppink;
+	opacity: 30%;
+}
+
+.note:hover,
+.note:focus {
+	box-shadow: 0 0 2rem rgba(0, 0, 0, 0.4);
+	transition: all 200ms ease;
+}
+
+.note:hover::placeholder {
+	opacity: 70%;
+	transition: all 200ms ease;
+}
+
+.btn {
+	height: 20rem;
+	background-color: rgba(255, 255, 255, 0.4);
+	border: none;
+	border-radius: 1.5rem;
+	font-size: 7rem;
+	font-weight: 700;
+	color: rgba(0, 0, 0, 0.2);
+	cursor: pointer;
+}
+
+.btn:hover {
+	background: rgba(255, 255, 255, 0.5);
+	color: rgba(0, 0, 0, 0.7);
+	transition: all 200ms ease;
+}
