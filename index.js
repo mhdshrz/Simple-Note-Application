@@ -42,7 +42,6 @@ function addNote() {
 }
 
 function createNoteEl(id, content) {
-	console.log("im in creat note");
 	const noteEl = document.createElement("textarea");
 	noteEl.classList.add("note");
 	noteEl.placeholder = "Empty - Write here ...";
